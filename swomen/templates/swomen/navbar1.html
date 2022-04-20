@@ -1,0 +1,29 @@
+
+{% load static %}
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white border-bottom boder-success border-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="{% static 'images/stemwomenlogo.jpg' %} " alt="stem women logo" width="150" height="30"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ">
+          <li class="nav-item ms-4 me-4">
+            <a class="nav-link text-dark" aria-current="page" href="#">Jobs</a>
+          </li>
+          <li class="nav-item ms-4 me-4">
+            <a class="nav-link text-dark" href="#">Scholarships</a>
+          </li>
+          <li class="nav-item ms-4  me-5">
+            <a class="nav-link text-dark" href="#" tabindex="-1" aria-disabled="true">Networking</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-outline-light me-3 text-success" ><a href="{% url 'register' %}" class="text-dark">Join Now </a></button>
+          <button class="btn rounded-pill me-5 "  style="background-color:lightseagreen;"> <a href="{% url 'loginpage' %}" class="text-dark">Sign In </a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+ 
